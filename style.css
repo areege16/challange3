@@ -1,0 +1,150 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+}
+
+.container {
+    position: absolute;
+}
+
+.content {
+    display: flex;
+    gap: 8em;
+}
+
+.logo {
+    position: relative;
+    top: 2.5em;
+    left: 4em;
+}
+
+.bgImg {
+    z-index: -1;
+    position: absolute;
+}
+
+.leftImg {
+    z-index: 1;
+    top: 7em;
+    position: relative;
+    left: 4em
+}
+
+.rightText {
+    z-index: 1;
+    position: relative;
+    top: 10em;
+    color: white;
+    font-family: Poppins, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.rightText p {
+
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 33em;
+
+
+
+}
+
+button {
+    border-radius: 3em;
+    height: 3em;
+    border: none;
+    width: 15em;
+    cursor: pointer;
+    color: hsl(257, 40%, 49%);
+}
+
+button:hover {
+    border-radius: 3em;
+    height: 3em;
+    border: none;
+    width: 15em;
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    gap: 0.5em;
+    
+}
+.social-icons i {
+    color: white;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px white solid;
+}
+
+.social-icons i:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .bgImg {
+        content: url('images/bg-mobile.svg');
+        width: 100vw;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .leftImg {
+        z-index: 1;
+        top: 4em;
+        position: relative;
+        left: 0em;
+        /* right: 2em; */
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        position: relative;
+        top: 1.5em;
+        left: 3em;
+    }
+
+    .rightText {
+        position: relative;
+        left: 0;
+        top: 5em;
+        text-align: center;
+    }
+    .social-icons {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin-top: 10em;
+    }
+}
